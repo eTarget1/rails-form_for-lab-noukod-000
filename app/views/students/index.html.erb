@@ -1,0 +1,9 @@
+<!-- <% @students.each do |student| %>
+  <div><%= student.first_name %></div>
+  <div><%= student.last_name %></div>
+<% end %> -->
+<h3> Student</h3>
+<% @students.each do |student| %>
+  <li><%= link_to student.to_s, student_path(student) %></li>
+<% end %>
+</ul>
